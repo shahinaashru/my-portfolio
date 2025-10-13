@@ -6,6 +6,9 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 body,
 html {
   height: 100%;
@@ -623,6 +626,12 @@ textarea:focus {
     display: none;
   }
   .about-div{
+    display: none;
+  }
+  .contact-image{
+    display: none;
+  }
+  .timeline-line{
     display: none;
   }
 }
