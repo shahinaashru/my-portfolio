@@ -647,30 +647,8 @@ textarea:focus {
   .contact-image{
     display: none;
   }
-  .timeline-line{
+  .experiance {
     display: none;
-  }
-  .timeline-item {
-    display: flex;
-    flex-direction: column; /* stack instead of left-right */
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .timeline-content {
-    width: 100% !important; /* full width */
-    margin: 0; /* remove left-right offsets */
-    padding: 10px; /* optional padding */
-  }
-
-  .timeline-line {
-    display: none; /* optional: hide vertical line on mobile */
-  }
-
-  .timeline-date {
-    width: 100%;
-    text-align: left; /* align date on top */
-    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 1500px){
