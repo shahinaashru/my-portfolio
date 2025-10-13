@@ -619,6 +619,12 @@ textarea:focus {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   }
+  .banner-image{
+    display: none;
+  }
+  .about-div{
+    display: none;
+  }
 }
 @media screen and (max-width: 1500px){
   .service-container{
