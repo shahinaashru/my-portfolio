@@ -17,6 +17,22 @@ html {
   font-weight: 400;
   color:#797979;
 }
+.padding {
+  padding: 5px 0; /* reduce padding on small screens */
+}
+
+h3, p {
+  word-wrap: break-word; /* prevent long words from overflowing */
+}
+/* Ensure the main container does not exceed viewport */
+.timeline {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* hide any accidental overflow */
+  box-sizing: border-box;
+}
+
+
 section {
   scroll-margin-top: 100px; /* adjust to your header height */
 }
@@ -610,7 +626,7 @@ textarea:focus {
   opacity: 1;
   transform: scale(1);
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
    .brand h2{
     font-size: 20px;
    }
@@ -634,6 +650,28 @@ textarea:focus {
   .timeline-line{
     display: none;
   }
+  .timeline-item {
+    display: flex;
+    flex-direction: column; /* stack instead of left-right */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .timeline-content {
+    width: 100% !important; /* full width */
+    margin: 0; /* remove left-right offsets */
+    padding: 10px; /* optional padding */
+  }
+
+  .timeline-line {
+    display: none; /* optional: hide vertical line on mobile */
+  }
+
+  .timeline-date {
+    width: 100%;
+    text-align: left; /* align date on top */
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 1500px){
   .service-container{
@@ -652,19 +690,17 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 900px){
+  .medium-device-icons{
+      display: block;
+  }
   .brand h2{
     font-size: 30px;
    }
    h2{
     font-size: 25px;
    }
-}
-@media screen and (max-width: 900px), screen and (max-width: 600px) {
-  .medium-device-icons{
-      display: block;
-  }
   .header {
-    flex-wrap: wrap; /* allow wrapping */
+    flex-wrap: wrap; 
   }
 
   .header-icons {
@@ -679,5 +715,6 @@ textarea:focus {
       margin-right: 50px;
   }
 }
+
 
 
