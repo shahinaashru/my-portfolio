@@ -6,9 +6,6 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  overflow-x: hidden;
-}
 body,
 html {
   height: 100%;
@@ -16,6 +13,8 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color:#797979;
+  overflow-x: hidden;
+  width: 100%;
 }
 .padding {
   padding: 5px 0; /* reduce padding on small screens */
