@@ -13,7 +13,6 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color:#797979;
-  overflow-x: hidden;
   width: 100%;
 }
 .padding {
@@ -27,7 +26,6 @@ h3, p {
 .timeline {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; /* hide any accidental overflow */
   box-sizing: border-box;
 }
 
@@ -486,7 +484,6 @@ textarea:focus {
 
 .project-item {
   position: relative;
-  overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
