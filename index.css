@@ -16,14 +16,6 @@ html {
   color:#797979;
   width: 100%;
 }
-img, iframe {
-  max-width: 100%;
-  height: auto;
-}
-.container {
-  width: 100%;
-}
-
 .padding {
   padding: 5px 0; /* reduce padding on small screens */
 }
